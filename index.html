@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ria Browne Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-name">Ria Browne</span>
+        <span class="logo-role">Artist</span>
+      </a>
+      <nav class="nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== GALLERY / WORK ===================== -->
+    <section id="work" class="section-work">
+      <div class="gallery-grid">
+
+        <figure class="gallery-item" data-index="0">
+          <img src="images/BeachDay.jpeg" alt="Beach Day" loading="lazy" />
+        </figure>
+
+        <figure class="gallery-item" data-index="1">
+          <img src="images/BeachGrass.jpeg" alt="Beach Grass" loading="lazy" />
+        </figure>
+
+        <figure class="gallery-item" data-index="2">
+          <img src="images/GoaBeach.jpeg" alt="Goa Beach" loading="lazy" />
+        </figure>
+
+        <figure class="gallery-item" data-index="3">
+          <img src="images/Headmaster.jpeg" alt="Headmaster" loading="lazy" />
+        </figure>
+
+        <figure class="gallery-item" data-index="4">
+          <img src="images/Journey.jpeg" alt="Journey" loading="lazy" />
+        </figure>
+
+        <figure class="gallery-item" data-index="5">
+          <img src="images/MotherandBaby.jpeg" alt="Mother and Baby" loading="lazy" />
+        </figure>
+
+        <figure class="gallery-item" data-index="6">
+          <img src="images/SunsetCastlegreen.jpeg" alt="Sunset Castlegreen" loading="lazy" />
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section-about">
+      <div class="about-inner">
+        <h2 class="about-headline">Ria Browne — Artist.</h2>
+        <p class="about-text">
+          Based in Ireland, Ria Browne's work explores light, place, and the quiet textures of everyday life. Her paintings move between the intimate and the expansive — from sun-drenched coastlines to still, domestic moments. Replace this text with your own biography when you're ready.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section-contact">
+      <div class="contact-inner">
+        <h2 class="contact-headline">Get in touch</h2>
+        <form action="https://formspree.io/f/xnjowape" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-send">Send</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Ria Browne Art</p>
+  </footer>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&#8592;</button>
+    <button class="lightbox-next" aria-label="Next">&#8594;</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
